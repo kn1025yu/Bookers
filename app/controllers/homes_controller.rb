@@ -1,8 +1,8 @@
-class BooksController < ApplicationController
-  def index
+class HomesController < ApplicationController
+   def index
     @books = Book.all
     @books = Book.new
-  end
+   end
 
   def show
     @books = Book.find(params[:id])
