@@ -1,0 +1,6 @@
+<h1>Bookd</h1>
+<% @books.each do |book| %>
+  <p>title</p>
+  <span>
+    <%= link_to show, book_path(book.id) %>  </span>
+<% end %>
