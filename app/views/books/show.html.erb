@@ -1,14 +1,14 @@
 <p>
   <strong>Title:</strong>
-  <%= book.title %>
+  <%= @books.title %>
 </p>
 
 <p>
   <strong>Body:</strong>
-  <%= book.body %>
+  <%= @books.body %>
 </p>
 
-<a class="edit" href="/books/show/edit">Edit</a> |
+<%= link_to "edit", edit_book_path %>
 <a class="back" href="/books">Back</a>
 
   </body>

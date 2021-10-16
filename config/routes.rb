@@ -3,12 +3,8 @@ Rails.application.routes.draw do
   root to: 'homes#top'
   get 'top' => 'homes#top'
 
-  get 'books' =>'books#index'
-  post 'books' => 'books#create'
-  get 'books/:id' => 'books#show', as:'book'
-  get 'books/:id/edit' => 'books#edit', as:'edit_book'
-  patch 'books/:id' => 'books#update', as:'update_book'
-  put 'books/:id' => 'books#update'
-  delete 'books/:id' => 'books#destroy'
+  resources :books
+  post '/books/new', to: 'books#create', as: :create
+  post '/books/edit', to: 'bookss#update', as: :update
 
 end
