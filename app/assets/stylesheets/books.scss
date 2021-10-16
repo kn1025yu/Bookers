@@ -19,3 +19,17 @@ table {
     border-color: grey;
 }
 
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+h4 {
+    margin-bottom: 0;
+}
