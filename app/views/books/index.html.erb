@@ -23,7 +23,7 @@
 
 <h3>New book</h3>
   <% if @blog.errors.any? %>
-    <%= @blog.errors.count %> errors have occurred
+    <%= @blog.errors.count %>errors have occurred
     <% @blog.errors.full_messages.each do |message| %>
     <%= message %>
     <% end %>
