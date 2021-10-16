@@ -21,9 +21,6 @@
     </tbody>
   </table>
 
-<%= flash[:notice] %>
-<%= flash[:alert] %>
-
 <h3>New book</h3>
   <% if @book.errors.any? %>
     <%= @book.errors.count %>errors have occurred
